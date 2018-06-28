@@ -3,12 +3,24 @@
   <head>
     <title>Wiki</title>
     <%= csrf_meta_tags %>
-
+    <%= stylesheet_link_tag "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css" %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+	<body>
+		<div class="navbar-fixed">
+		    <nav>
+		      <div class="nav-wrapper">
+		        <a href="#!" class="brand-logo">Logo</a>
+		        <ul class="right hide-on-med-and-down">
+		          	<li><%= link_to "Velaria Wiki", welcome_index_path %></li>
+		        	<li><%= link_to "Back to Forums", welcome_index_path %></li>
+		        </ul>
+		      </div>
+		    </nav>
+  		</div><!-- end navbar-fixed -->
+		
     <%= yield %>
-  </body>
+  	</body>
 </html>
