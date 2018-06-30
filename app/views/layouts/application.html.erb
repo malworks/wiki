@@ -9,18 +9,11 @@
   </head>
 
 	<body>
-		<div class="navbar-fixed">
-		    <nav>
-		      <div class="nav-wrapper">
-		        <a href="#!" class="brand-logo">Logo</a>
-		        <ul class="right hide-on-med-and-down">
-		          	<li><%= link_to "Velaria Wiki", welcome_index_path %></li>
-		        	<li><%= link_to "Back to Forums", welcome_index_path %></li>
-		        </ul>
-		      </div>
-		    </nav>
-  		</div><!-- end navbar-fixed -->
-		
-    <%= yield %>
+		<div class="container2">
+            <div class="header">HEADER</div>
+            <div class="menu">MENU</div>
+            <div class="content"><%= yield %></div>
+            <div class="footer">FOOTER</div>
+        </div> <!-- end container -->
   	</body>
 </html>
