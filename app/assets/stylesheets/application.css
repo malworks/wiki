@@ -14,7 +14,7 @@
  *= require_self
  */
 
-.container2 > div {
+.container2 > section {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,19 +30,19 @@ html, body {
   margin: 0px;
 }
 
-.container2 > div:nth-child(1n) {
+.container2 > section:nth-child(1n) {
     background-color: #96ceb4;	
 }
 
-.container2 > div:nth-child(3n) {
+.container2 > section:nth-child(3n) {
     background-color: #88d8b0;
 }
 
-.container2 > div:nth-child(2n) {
+.container2 > section:nth-child(2n) {
     background-color: #ff6f69;
 }
 
-.container2 > div:nth-child(4n) {
+.container2 > section:nth-child(4n) {
     background-color: #ffcc5c;
 }
 
